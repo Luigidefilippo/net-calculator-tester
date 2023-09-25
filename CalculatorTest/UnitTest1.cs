@@ -20,7 +20,7 @@ namespace CalculatorTest
             float y = 1.5f;
 
             float realOutput = 5.1f;
-            float sum = calculator.Add(x, y);
+            float sum = Calculator.Add(x, y);
 
             Assert.IsTrue(realOutput == sum , $"Il risultato corretto è {realOutput}, il tuo risulato è {sum}");
         }
@@ -32,7 +32,7 @@ namespace CalculatorTest
             float y = 2.3f;
 
             float realOutput = 3.0f;
-            float subtract = calculator.Subtract(x, y);
+            float subtract = Calculator.Subtract(x, y);
 
             Assert.AreEqual(realOutput, subtract);
         }
@@ -44,7 +44,7 @@ namespace CalculatorTest
             float y = 2.0f;
 
             float realOutput = 5.0f;
-            float divided = calculator.Divide(x, y);
+            float divided = Calculator.Divide(x, y);
 
             Assert.AreEqual(realOutput, divided);
         }
@@ -56,7 +56,7 @@ namespace CalculatorTest
             float y = 3.6f;
 
             float realOutput = 43.2f;
-            float multiplied = calculator.Multiply(x, y);
+            float multiplied = Calculator.Multiply(x, y);
 
             Assert.AreEqual(realOutput, multiplied);
         }
