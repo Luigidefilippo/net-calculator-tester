@@ -32,10 +32,21 @@ namespace CalculatorTest
             float y = 2.3f;
 
             float realOutput = 3.0f;
-
             float subtract = calculator.Subtract(x, y);
 
-            Assert.That(subtract, Is.EqualTo(realOutput));
+            Assert.AreEqual(realOutput, subtract);
+        }
+
+        [Test]
+        public void TestDividerFloat()
+        {
+            float x = 10.0f;
+            float y = 2.0f;
+
+            float realOutput = 5.0f;
+            float divided = calculator.Divide(x, y);
+
+            Assert.AreEqual(realOutput, divided);
         }
     }
 }
