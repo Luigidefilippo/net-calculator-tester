@@ -48,5 +48,17 @@ namespace CalculatorTest
 
             Assert.AreEqual(realOutput, divided);
         }
+
+        [Test]
+        public void TestMultiplyFloat()
+        {
+            float x = 12.0f;
+            float y = 3.6f;
+
+            float realOutput = 43.2f;
+            float multiplied = calculator.Multiply(x, y);
+
+            Assert.AreEqual(realOutput, multiplied);
+        }
     }
 }
